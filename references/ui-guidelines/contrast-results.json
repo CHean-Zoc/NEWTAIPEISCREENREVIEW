@@ -1,0 +1,77 @@
+{
+  "method": "WCAG relative luminance; opaque sRGB pairs; thresholds applied before rounding",
+  "results": [
+    {
+      "name": "白字／主色",
+      "foreground": "#ffffff",
+      "background": "#1f5573",
+      "ratio": 8.060733269804174,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "白字／主色互動態",
+      "foreground": "#ffffff",
+      "background": "#173e57",
+      "ratio": 11.271503861507927,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "白字／草木綠",
+      "foreground": "#ffffff",
+      "background": "#638b62",
+      "ratio": 3.8889280060606977,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "白字／深草木綠",
+      "foreground": "#ffffff",
+      "background": "#3f6d4e",
+      "ratio": 5.984918539517415,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "成功文字／成功淡底",
+      "foreground": "#3f6d4e",
+      "background": "#e8f1e4",
+      "ratio": 5.167996267277119,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "正文／米白",
+      "foreground": "#2f3b43",
+      "background": "#faf7f0",
+      "ratio": 10.739987521764517,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "次要文字／米白",
+      "foreground": "#64727c",
+      "background": "#faf7f0",
+      "ratio": 4.629271142646278,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "次要文字／淡灰藍",
+      "foreground": "#64727c",
+      "background": "#edf3f6",
+      "ratio": 4.42278858909969,
+      "purpose": "一般文字",
+      "threshold": 4.5
+    },
+    {
+      "name": "邊線／白底",
+      "foreground": "#d9e2e7",
+      "background": "#ffffff",
+      "ratio": 1.31391331105162,
+      "purpose": "非文字界線參考",
+      "threshold": 3
+    }
+  ]
+}

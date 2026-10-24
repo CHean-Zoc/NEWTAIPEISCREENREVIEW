@@ -1,0 +1,63 @@
+:root {
+  /* 主色｜深藍：導覽列、標題、主要操作 */
+  --nthurc-primary-700: #1f5573;
+  --nthurc-primary-800: #173e57;
+
+  /* 輔助色｜草木綠：流程、成功狀態、重點提示 */
+  --nthurc-green-500: #638b62;
+  --nthurc-green-700: #3f6d4e;
+  --nthurc-green-050: #e8f1e4;
+
+  /* 背景色｜米白、淡灰藍 */
+  --nthurc-bg-warm: #faf7f0;
+  --nthurc-bg-cool: #edf3f6;
+
+  /* 情境色｜延伸水彩插畫氛圍 */
+  --nthurc-scene-watercolor-green: #afcb9c;
+  --nthurc-scene-sky-blue: #a8d1e2;
+  --nthurc-scene-warm-beige: #ead2b5;
+
+  /* 共用文字與邊界 */
+  --nthurc-text: #2f3b43;
+  --nthurc-text-muted: #64727c;
+  --nthurc-border: #d9e2e7;
+  --nthurc-white: #ffffff;
+}
+
+/* 建議用法 */
+.nthurc-navbar,
+.nthurc-primary-button {
+  color: var(--nthurc-white);
+  background: var(--nthurc-primary-700);
+}
+
+.nthurc-primary-button:hover,
+.nthurc-primary-button:focus-visible {
+  background: var(--nthurc-primary-800);
+}
+
+.nthurc-success {
+  color: var(--nthurc-green-700);
+  background: var(--nthurc-green-050);
+  border: 1px solid var(--nthurc-green-500);
+}
+
+.nthurc-page {
+  color: var(--nthurc-text);
+  background: var(--nthurc-bg-warm);
+}
+
+.nthurc-section {
+  background: var(--nthurc-bg-cool);
+}
+
+/*
+ * 對比提醒：
+ * - 白字 / primary-700 = 8.06:1，可用於一般文字與按鈕。
+ * - 白字 / green-700 = 5.98:1，可用於一般文字與成功按鈕。
+ * - green-500 不建議直接承載小型白字；改用 green-700，
+ *   或以 green-050 為底搭配 green-700 文字。
+ */
+
+/* 以下為試行建議，並非 Figma 擷取值 */
+:root { --ui-space-unit:4px; --ui-radius-control:8px; --ui-radius-card:16px; --ui-control-min-height:44px; --ui-error:#b42318; --ui-error-bg:#fef3f2; }

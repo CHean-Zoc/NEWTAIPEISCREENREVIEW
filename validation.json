@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-23",
+  "scope": "本機 HTML 設計原型；以 CDP 操作 Edge 無頭瀏覽器",
+  "testData": "合成示範會員、example.com、示範驗證碼；無真實資料或正式副作用",
+  "screens": 38,
+  "relations": 117,
+  "checks": [
+    {
+      "name": "畫面編號唯一",
+      "expected": 38,
+      "actual": 38,
+      "pass": true
+    },
+    {
+      "name": "關聯起迄皆存在",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "所有畫面按鈕目標皆存在",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "桌面無整頁水平溢出",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "官方及本機圖片載入",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "IC 卡主路徑抵達會員補資料",
+      "expected": "U07-01",
+      "actual": "U07-01",
+      "pass": true
+    },
+    {
+      "name": "未同意或未驗證時保留表單",
+      "expected": "U07-01",
+      "actual": "U07-01",
+      "pass": true
+    },
+    {
+      "name": "表單阻擋有提示",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "錯誤驗證碼留在原視窗",
+      "expected": "U07-02",
+      "actual": "U07-02",
+      "pass": true
+    },
+    {
+      "name": "錯誤碼提示",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "重送明確為示範",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "驗證返回保留資料",
+      "expected": "流程示範會員",
+      "actual": "流程示範會員",
+      "pass": true
+    },
+    {
+      "name": "全員密碼方案進入密碼畫面",
+      "expected": "U07-06",
+      "actual": "U07-06",
+      "pass": true
+    },
+    {
+      "name": "建帳完成",
+      "expected": "U09-01",
+      "actual": "U09-01",
+      "pass": true
+    },
+    {
+      "name": "免強制密碼方案直接完成",
+      "expected": "U09-01",
+      "actual": "U09-01",
+      "pass": true
+    },
+    {
+      "name": "修改聯絡資料後撤銷原驗證狀態",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "行動掃碼逾時路徑",
+      "expected": "U06-02-expired",
+      "actual": "U06-02-expired",
+      "pass": true
+    },
+    {
+      "name": "取消不誤顯示成功",
+      "expected": "U05-02-cancel",
+      "actual": "U05-02-cancel",
+      "pass": true
+    },
+    {
+      "name": "原會員驗證後綁定完成",
+      "expected": "U08-04",
+      "actual": "U08-04",
+      "pass": true
+    },
+    {
+      "name": "已綁定導向登入完成",
+      "expected": "U01-03",
+      "actual": "U01-03",
+      "pass": true
+    },
+    {
+      "name": "認證成功但會員停用仍阻擋",
+      "expected": "U01-04",
+      "actual": "U01-04",
+      "pass": true
+    },
+    {
+      "name": "本站密碼救援主路徑",
+      "expected": "U10-05",
+      "actual": "U10-05",
+      "pass": true
+    },
+    {
+      "name": "未設密碼不得直接進入重設流程",
+      "expected": "U10-01-unset",
+      "actual": "U10-01-unset",
+      "pass": true
+    },
+    {
+      "name": "離開確認可繼續填寫",
+      "expected": "U07-01",
+      "actual": "U07-01",
+      "pass": true
+    },
+    {
+      "name": "三張縮圖關聯圖",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "關聯圖有實際畫面縮圖",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "畫冊張數",
+      "expected": 38,
+      "actual": 38,
+      "pass": true
+    },
+    {
+      "name": "全部畫面手機寬度無整頁溢出",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "未介接憑證服務、未實際驗章、未建立 Session 或會員、未發送 SMS 或郵件",
+    "未取得本案交易 QR Code、實機 App 認證確認與 OS 生物辨識畫面",
+    "未做完整讀屏與正式無障礙符合性認證",
+    "官方商店版本可確認，宣傳截圖是否完全對應最新實機無法保證"
+  ],
+  "visualReview": {
+    "reviewed": "2026-10-23",
+    "method": "直接檢視入口、資料表單、掃碼版位與官方原圖，並檢視 38 張縮圖接觸表及 375px 長頁",
+    "findings": "已修正官方 IC 卡分頁與元件異常原圖對應；未見主要裁切或整頁溢出",
+    "limit": "縮圖檢視不取代所有文字逐字與讀屏審查"
+  }
+}
